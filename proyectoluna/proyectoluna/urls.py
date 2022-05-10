@@ -35,5 +35,4 @@ urlpatterns = [
     #path('Pets', views.Pets, name="Pets"),  
 
  
-
     ]

@@ -27,14 +27,14 @@ def contacto(request):
     return render(request, "contacto.html")
     
     
-def Home(request):
-    return HttpResponse("Home")
+def home(request):
+    return render(request, "appAtenciones/home.html")
 
 def servicios(request):
-    return HttpResponse("Servicios")
+    return render(request, "appAtenciones/servicios.html")
 
 def Pets(request):
-    return HttpResponse("Pets")
+    return render(request, "appAtenciones/pets.html")
 
 #def Contacto(request):
 #   return HttpResponse("Contacto")

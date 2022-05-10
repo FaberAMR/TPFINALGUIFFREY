@@ -8,7 +8,7 @@ urlpatterns = [
     #path('busquedas/', views.busqueda_mascota),
     #path('buscar_btn/', views.buscar_btn),
     #path('contacto/', views.contacto),
-    path('', views.Home, name="Home"),
+    path('', views.home, name="home"),
     path('Servicios', views.servicios, name="Servicios"), 
     path('Pets', views.Pets, name="Pets"),  
 

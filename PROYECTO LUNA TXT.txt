@@ -1,9 +1,0 @@
-Una pagina web llamada proyecto luna que permite cargar atenciones, 
-veterinarias a mascotas mediante 
-la carga de mascotas, dueños y veterinarios para lo cual tiene una 
-pagina de registro y login de veterinarios.
-Permite buscar mascotas por nombre el resultado lista de 
-mascotas que coincidan con el nombre.
-
-acerca de mi tiene un acceso visible a la vista donde describo quien soy y el proyecto
-(

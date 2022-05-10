@@ -20,4 +20,6 @@ http://127.0.0.1:8000/
 - bk bbddLuna PostgresSQL ...\PROYECTOLUNA\proyectoluna\Backup BBDD
 
 - para la estetica use Boostrap
-- app Atenciones 
+- app Atenciones (gestion de la pagina wed)
+- appAdopciones (gestion de adopciones ,publicar mascota para adopcion, subiendo descripcion, imagen y datos)
+- modelo Pet para cargar (nombre #Titulo, fecha_nac #fecha, datos #subtutitulo, imagen #imagen, contacto #autor, created)

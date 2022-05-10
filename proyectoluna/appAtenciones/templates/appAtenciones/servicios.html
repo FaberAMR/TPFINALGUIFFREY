@@ -1,0 +1,49 @@
+{% extends "appAtenciones/base.html" %}
+{% load static  %}
+{% block content  %}
+
+   <!-- Heading -->
+   <section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'appAtenciones/img/principal.jpg' %}" alt="">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4" >
+            <span class="section-heading-lower">Servicios</span>
+            <span class="section-heading-upper">INTERNACIONES
+                RAYOS X
+                LABORATORIO
+                ECOGRAFÍAS
+                CASTRACIONES
+                CIRUGÍAS
+                CARDIOLOGÍA
+                PLANES NUTRICIONALES</span>
+          </h2>
+          <p class="mb-3">Sistema de atencion integral de mascotas.
+          </p>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+    <!-- Message -->
+    <section class="page-section cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner text-center rounded">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">Compromiso total</span>
+                <span class="section-heading-lower">Garantizado</span>
+              </h2>
+              <p class="mb-0">Desde 1995 Veterinaria Luna brinda la mejor atención veterinaria para tu mascota. Para ello, seleccionamos los mejores profesionales veterinarios, quienes continúan en capacitación y formación constante, para darle la más cálida y profesional atención a tu mascota..</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% endblock %}

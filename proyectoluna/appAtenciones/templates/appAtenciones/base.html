@@ -37,16 +37,16 @@
           <li class="nav-item active px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'home' %}">Inicio</a>
           </li>
-          <li class="nav-item px-lg-4">
+          <li class="nav-item {% if request.path == '/Servicios' %}  active {% endif %}  px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Servicios' %}">Servicios</a>
           </li>
-          <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'Pets' %}">Tienda</a>
+          <li class="nav-item {% if request.path == '/Pets' %}  active {% endif %} px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'Pets' %}">Pets</a>
           </li>
-          <li class="nav-item px-lg-4">
+          <li class="nav-item {% if request.path == '/Busqueda' %}  active {% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="busqueda_msct.html">Busquedas</a>
           </li>
-          <li class="nav-item px-lg-4">
+          <li class="nav-item {% if request.path == '/Acerca de' %}  active {% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="Acerca_de.html">Acerca de</a>
           </li>
          

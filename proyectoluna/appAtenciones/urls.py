@@ -11,7 +11,8 @@ urlpatterns = [
     path('', views.home, name="home"),
     path('Servicios', views.servicios, name="Servicios"), 
     path('Pets', views.Pets, name="Pets"),  
-
+    path('Acercade', views.Acercade, name="acercade"),
+    #path('Busqueda', views.Busqueda, name="Busqueda"),   
 
     
 

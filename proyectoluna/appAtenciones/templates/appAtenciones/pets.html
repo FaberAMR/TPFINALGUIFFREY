@@ -2,6 +2,14 @@
 {% load static  %}
 {% block content  %}
 
-   
+   {% for p in pets %}
+<div><p>
 
-    {% endblock %}
+    <h2 style="color: rgb(246, 237, 237);">{{p.nombre}} </h2>
+    <p style="color: rgb(246, 237, 237);" >{{p.datos}} </p>
+    <p><img src="{{p.imagen.url}}"></p>
+    
+
+</p></div>
+    {% endfor %}
+ {% endblock %}

@@ -1,0 +1,54 @@
+{% extends "appAtenciones/base.html" %}
+{% load static  %}
+{% block content  %}
+
+<section>
+  <div style="width:75% ; margin:auto; text-align:center; color:white;">
+    Tipos:
+
+    {% for p in pets %}
+      {% for t in tipos.all %}
+        {{t.nombre}}
+      {% endfor %}
+    {% endfor %}
+
+  </div>
+ </section>
+
+   {% for p in pets %}
+  
+
+   <!-- Heading -->
+   <section class="page-section clearfix">
+      <div class="container">
+        <div class="intro">
+          <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{p.imagen.url}}" alt="" style="width: 50%;">
+          <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+            <h2 class="section-heading mb-4" >
+              <span class="section-heading-lower">{{p.nombre}}</span>
+              <span class="section-heading-upper">{{p.datos}}</span>
+            </h2>
+            <p class="mb-3">Sistema de atencion integral de mascotas.
+            </p>
+           
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<div><p>
+
+   <!-- <form action="/buscar_btn/" method="GET">
+        <input type="text" name="msct">
+        <input type="submit" value="Search">
+    </form>
+    -->
+    
+
+</p></div>
+    {% endfor %}
+
+
+
+ {% endblock %}

@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'appAtenciones',
     'appControlDeStock',
     'appAdopciones',
+    'appBlog',
+    
 ]
 
 MIDDLEWARE = [

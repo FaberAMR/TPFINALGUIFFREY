@@ -15,8 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from django.conf import settings
-from django.conf.urls.static import static
+
 #from proyectoluna.views import mascota, dueño, veterinario
 #from appAtenciones.views import busqueda_mascota, buscar_btn
 #from appAtenciones import views
@@ -25,7 +24,9 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('pets/', include('appAdopciones.urls')),
     path('', include('appAtenciones.urls')),
+    path('blog/', include('appBlog.urls')),
     #path('mascota/', mascota),
     #path('dueño/', dueño),
     ##path('veterinario/', veterinario),
@@ -38,4 +39,3 @@ urlpatterns = [
 
  
     ]
-urlpatterns+=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -5,13 +5,26 @@ from django.db import models
 
 
 # Create your models here.
+class Tipo(models.Model): 
+    nombre =models.CharField(max_length=40) 
+    created=models.DateTimeField(auto_now_add=True)
+    updated=models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        verbose_name='tipo'
+        verbose_name_plural='tipos'
+    
+    def __str__(self):
+        return self.nombre
 
 class Pet(models.Model): 
     nombre =models.CharField(max_length=40) #Titulo
     fecha_nac=models.DateTimeField() #fecha
     datos=models.CharField(max_length=40) #subtutlo
     imagen=models.ImageField(upload_to='appAtenciones', null=True, blank = True) #imagen
-    #contacto=models.IntegerField() #autor
+    #tipo=models.CharField(max_length=40, null=True)
+    tipo=models.ManyToManyField(Tipo)
+    #contacto=models.IntegerField() 
     created=models.DateTimeField(auto_now_add=True)
     updated=models.DateTimeField(auto_now_add=True)
 
@@ -21,4 +34,5 @@ class Pet(models.Model):
     
     def __str__(self):
         return self.nombre
+
 

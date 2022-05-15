@@ -22,8 +22,8 @@ class Pet(models.Model):
     fecha_nac=models.DateTimeField() #fecha
     datos=models.CharField(max_length=40) #subtutlo
     imagen=models.ImageField(upload_to='appAtenciones', null=True, blank = True) #imagen
-    #tipo=models.CharField(max_length=40, null=True)
-    tipo=models.ManyToManyField(Tipo)
+    tipo=models.CharField(max_length=40, null=True)
+    tipos=models.ManyToManyField(Tipo)
     #contacto=models.IntegerField() 
     created=models.DateTimeField(auto_now_add=True)
     updated=models.DateTimeField(auto_now_add=True)

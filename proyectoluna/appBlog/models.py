@@ -21,8 +21,8 @@ class Categoria(models.Model):
 
 class Post(models.Model): 
     titulo =models.CharField(max_length=40) #Titulo
-    subtitulo =models.CharField(max_length=4, null=True) #subTitulo
-    contenido=models.CharField(max_length=50) #cuerpo
+    subtitulo =models.CharField(max_length=40, null=True) #subTitulo
+    contenido=models.CharField(max_length=100) #cuerpo
     imagen=models.ImageField(upload_to='appBlog', null=True, blank = True) #imagen
     autor=models.ForeignKey(User, on_delete=models.CASCADE)
     categotias=models.ManyToManyField(Categoria)
@@ -34,4 +34,4 @@ class Post(models.Model):
         verbose_name_plural='posts'
     
     def __str__(self):
-        return self.nombre
+        return self.titulo

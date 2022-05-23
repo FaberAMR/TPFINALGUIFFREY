@@ -27,6 +27,8 @@ urlpatterns = [
     path('pets/', include('appAdopciones.urls')),
     path('', include('appAtenciones.urls')),
     path('blog/', include('appBlog.urls')),
+    path('usuarios/', include('appUsuarios.urls')),
+    #path(r'^usuarios/', include('appUsuarios.urls', namespace=usuarios)),
     #path('mascota/', mascota),
     #path('dueño/', dueño),
     ##path('veterinario/', veterinario),

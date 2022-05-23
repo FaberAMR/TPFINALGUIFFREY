@@ -22,6 +22,7 @@ http://127.0.0.1:8000/
 - modelo Blog para cargar desde admin (#Titulo, subtitulo,imagen, contenido, autor, fecha creacion y modificacion)
 desde url http://127.0.0.1:8000/Pets
 desde http://127.0.0.1:8000/blog/
+<<<<<<< HEAD
 
 AppUsuarios
 -formulario de usuario
@@ -31,3 +32,5 @@ AppUsuarios
 -sesion de usuario
 -formulario de loguin
 -avisos de error de loguin y registro
+=======
+>>>>>>> 43e83d6a00f6401bddbf43e3d68adee3b076cfb5
